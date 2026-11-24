@@ -7,7 +7,7 @@ t.tracer(0)
 
 pen=t.Turtle()
 pen.shape("triangle")
-pen.color("#000000")   #白色画笔 #ffffff
+pen.color("#000000")   
 
 def ground():
     a=(-500,-200)
@@ -82,7 +82,7 @@ def snow_man():
 
 
 def draw_tree():
-    #trunk 树干 正确顺序
+    #trunk 
     top_left = (0,0)
     top_right = (80,0)
     bot_right = (80,-200)
@@ -102,19 +102,19 @@ def draw_tree():
 
 
     pen.penup()
-    pen.goto(top_left)   #移动到图形起点
+    pen.goto(top_left)   
 
-    pen.fillcolor("#7A4827") #填充颜色
-    pen.begin_fill()         #开启填充！在pendown之前
+    pen.fillcolor("#7A4827") 
+    pen.begin_fill()         
 
     pen.pendown()
 
     pen.goto(top_right)
     pen.goto(bot_right)
     pen.goto(bot_left)
-    pen.goto(top_left)  #回到起点闭合图形
+    pen.goto(top_left)  
 
-    pen.end_fill() #结束填充
+    pen.end_fill() 
     pen.penup()
     pen.goto(c1)
     pen.fillcolor("#008000")
@@ -177,20 +177,20 @@ def rocket():
     pen.pendown()
 
    
-    pen.fillcolor("#707070") #机身灰色 hex色号
-    pen.begin_fill()         #开始填充
+    pen.fillcolor("#707070") 
+    pen.begin_fill()         
     pen.goto(h)
     pen.goto(v)
     pen.goto(w)
     pen.goto(i)
-    pen.goto(g)              #回到起点，闭合多边形
-    pen.end_fill()           #结束填充
+    pen.goto(g)              
+    pen.end_fill()           
     # =============================
 
-    #外层红色火焰
+    
     pen.penup()
     pen.goto(m)
-    pen.color("#ff2222") #红色hex
+    pen.color("#ff2222") 
     pen.fillcolor("#ff2222")
     pen.begin_fill()
     pen.pendown()
@@ -199,11 +199,10 @@ def rocket():
     pen.goto(p)
     pen.goto(n)
     pen.end_fill()
-
-    #内层橙色火焰
+    
     pen.penup()
     pen.goto(tt)
-    pen.color("#ff9900") #橙色hex
+    pen.color("#ff9900") 
     pen.fillcolor("#ff9900")
     pen.begin_fill()
     pen.pendown()
@@ -215,13 +214,12 @@ def rocket():
 
     pen.penup()
     pen.goto(i)
-    pen.color("#ffffff") #恢复画笔白色
+    pen.color("#ffffff") 
     pen.pendown()
     pen.goto(h)
 
 
 def line():
-    """画底部水平参考线"""
     pen.penup()
     pen.goto(-500,-200)
     pen.pendown()
